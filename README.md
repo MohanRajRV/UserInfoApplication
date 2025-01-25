@@ -1,4 +1,5 @@
 # **UserInfoApplication**
+**A web-based application that allows users to register, upload their information, and view their profile. The data is stored in an H2 in-memory database using Hibernate for ORM (Object-Relational Mapping). Users can also log in to view their profile information.**
 
 ## **Features**
 
