@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/css/newuser/styles.css">
+</head>
+
+<form method="post" action="/userdetails" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+     <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Your Password" required><br><br>
+     
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" placeholder="Your Department" required><br><br>
+
+    <label for="projectLink">Project Link:</label>
+    <input type="url" id="projectLink" name="projectLink" placeholder="Your Project Link" required><br><br>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+    <label for="projectDescription">Project Description:</label><br>
+    <textarea id="projectDescription" name="description" rows="4" cols="50" placeholder="Describe your project" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>

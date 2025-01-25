@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <link rel="stylesheet" href="/css/profile/styles.css"> 
+</head>
+<body>
+    <h1>User Details</h1>
+    
+    <div class="user-details">
+        <span>USER ID:</span>
+        <div th:text="${user.id}"></div>
+    </div>
+    
+    <div class="user-details">
+        <span>NAME:</span>
+        <div th:text="${user.name}"></div>
+    </div>
+    
+    <div class="user-details">
+        <span>Email:</span>
+        <div th:text="${user.email}"></div>
+    </div>
+    
+    <div class="user-details">
+        <span>PROJECT LINK:</span>
+        <div th:text="${user.projectLink}"></div>
+    </div>
+    
+    <div class="user-details">
+        <span>DESCRIPTION:</span>
+        <div th:text="${user.description}"></div>
+    </div>
+
+    <h3>Photo:</h3>
+    <img th:src="@{'data:image/jpeg;base64,' + ${user.base64Photo}}" alt="User Photo" />
+
+    <a href="mainpage">BACK TO LOGIN</a>
+</body>
+</html>
